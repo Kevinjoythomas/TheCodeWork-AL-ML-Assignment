@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile UI generator</title>
+</head>
+<body>
+    <h1>Send Your Prompt here</h1>
+    <form method="POST">
+        <input type="text" name="textbox" placeholder="Type here">
+        <button type="submit">Send</button>
+    </form>
+    {% if image_path %}
+    <h2>Generated Image</h2>
+    <img src="{{ url_for('static', filename='images/{}'.format(image_path.split('/')[-1])) }}" alt="Generated Image">
+    {% endif %}
+</body>
+</html>
