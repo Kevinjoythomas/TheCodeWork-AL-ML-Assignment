@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from transformers import pipeline
 from groq import Groq
-client = Groq(api_key = "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")
+client = Groq(api_key = ".env/groqKey")
 
 MODEL = 'Llama-3.1-8b-instant'
 
