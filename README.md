@@ -55,8 +55,7 @@ The app consists of several core files and functions:
 ## Memory Constraints
 The app currently cannot fine-tune the Stable Diffusion model using LoRA due to insufficient memory. Fine-tuning would allow the model to learn specific patterns, styles, or enhance output based on the user’s needs.
 
-## Model Integration
-The integration with Groq and Llama-3.1-8b-instant for prompt generation is a complex task that requires adequate hardware resources. The current setup uses stubbed functions to simulate the interaction with Groq.
+
 
 # Future Work
 
